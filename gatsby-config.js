@@ -3,7 +3,7 @@ module.exports = {
     title: `Victor Nestor's Blog`,
     author: {
       name: `Victor Nestor`,
-      summary: `who lives in NYC, graduted from Brooklyn Collge, and enjoys taking pictures!`,
+      summary: `who lives in NYC, graduated from Brooklyn College, and enjoys taking pictures!`,
     },
     description: `Victor Nestor's peronal blog using the starter blog template from Gatsby!`,
     siteUrl: `https://vnestor.github.io/personal-blog/`,

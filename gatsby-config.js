@@ -10,6 +10,7 @@ module.exports = {
     social: {
       github: `VNestor`,
     },
+    pathPrefix: "/personal-blog",
   },
   plugins: [
     `gatsby-plugin-image`,

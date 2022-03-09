@@ -1,14 +1,14 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
+    title: `Victor Nestor's Blog`,
     author: {
-      name: `Kyle Mathews`,
-      summary: `who lives and works in San Francisco building useful things.`,
+      name: `Victor Nestor`,
+      summary: `who lives in NYC, graduted from Brooklyn Collge, and enjoys taking pictures!`,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
+    description: `Victor Nestor's peronal blog using the starter blog template from Gatsby!`,
+    siteUrl: `https://vnestor.github.io/personal-blog/`,
     social: {
-      twitter: `kylemathews`,
+      github: `VNestor`,
     },
   },
   plugins: [

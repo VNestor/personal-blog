@@ -1,7 +1,7 @@
 ---
-title: New Beginnings
+title: Retreiving reviews using Google API.
 date: "2015-05-28T22:40:32.169Z"
-description: This is a custom description for SEO and Open Graph purposes, rather than the default generated excerpt. Simply add a description field to the frontmatter.
+description: Explaining how I managed to retreive reviews using Google API and the obstacles I encountered.
 ---
 
 Far far away, behind the word mountains, far from the countries Vokalia and

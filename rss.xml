@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[Victor Nestor's peronal blog using the starter blog template from Gatsby!]]></description><link>https://vnestor.github.io/personal-blog</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 09 Mar 2022 06:26:16 GMT</lastBuildDate><item><title><![CDATA[Retreiving reviews using Google API.]]></title><description><![CDATA[Prequel When working on Fruces’ website, I wanted to have a reviews section for their website. At first, I thought all I had to do was sign…]]></description><link>https://vnestor.github.io/personal-blog/my-first-post/</link><guid isPermaLink="false">https://vnestor.github.io/personal-blog/my-first-post/</guid><pubDate>Tue, 08 Mar 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;Prequel&lt;/h2&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[Victor Nestor's peronal blog using the starter blog template from Gatsby!]]></description><link>https://vnestor.github.io/personal-blog</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 09 Mar 2022 06:29:44 GMT</lastBuildDate><item><title><![CDATA[Retreiving reviews using Google API.]]></title><description><![CDATA[Prequel When working on Fruces’ website, I wanted to have a reviews section for their website. At first, I thought all I had to do was sign…]]></description><link>https://vnestor.github.io/personal-blog/my-first-post/</link><guid isPermaLink="false">https://vnestor.github.io/personal-blog/my-first-post/</guid><pubDate>Tue, 08 Mar 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;Prequel&lt;/h2&gt;
 &lt;p&gt;When working on &lt;a href=&quot;https://www.fruces.com/&quot;&gt;Fruces’&lt;/a&gt; website, I wanted to have a reviews section for their website. At first, I thought all I had to do was sign up for Google Cloud, get an API key, then make an API request, and I’d be done. That was not the case. Getting reviews from Google can be much simpler if you’re working with a CMS that have plugins readily available, like WordPress. This situation did not call for that, and I thought the task would be simple enough that I didn’t need to install an npm package. So I thought I’d try to figure it on my own and quickly realized that was not the case.&lt;/p&gt;
 &lt;h2&gt;Getting Started&lt;/h2&gt;
 &lt;p&gt;First, I needed to learn where I can get reviews from a small business that is on Google. I turned to the Google Places API. &lt;strong&gt;Note: Google Places only provide the five most recent reviews, if you need more, you might want to look elsewhere&lt;/strong&gt;.&lt;/p&gt;
@@ -24,7 +24,7 @@ firm-textured, round yolk that is bright orange-red in color.&lt;/p&gt;
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/8058f3f26913fea3b6a89a73344fe94a/e1596/salty_egg.jpg&quot;
+    href=&quot;/personal-blog/static/8058f3f26913fea3b6a89a73344fe94a/e1596/salty_egg.jpg&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -37,13 +37,13 @@ firm-textured, round yolk that is bright orange-red in color.&lt;/p&gt;
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;Chinese Salty Egg&quot;
         title=&quot;Chinese Salty Egg&quot;
-        src=&quot;/static/8058f3f26913fea3b6a89a73344fe94a/828fb/salty_egg.jpg&quot;
-        srcset=&quot;/static/8058f3f26913fea3b6a89a73344fe94a/ff44c/salty_egg.jpg 158w,
-/static/8058f3f26913fea3b6a89a73344fe94a/a6688/salty_egg.jpg 315w,
-/static/8058f3f26913fea3b6a89a73344fe94a/828fb/salty_egg.jpg 630w,
-/static/8058f3f26913fea3b6a89a73344fe94a/0ede0/salty_egg.jpg 945w,
-/static/8058f3f26913fea3b6a89a73344fe94a/3ac88/salty_egg.jpg 1260w,
-/static/8058f3f26913fea3b6a89a73344fe94a/e1596/salty_egg.jpg 2048w&quot;
+        src=&quot;/personal-blog/static/8058f3f26913fea3b6a89a73344fe94a/828fb/salty_egg.jpg&quot;
+        srcset=&quot;/personal-blog/static/8058f3f26913fea3b6a89a73344fe94a/ff44c/salty_egg.jpg 158w,
+/personal-blog/static/8058f3f26913fea3b6a89a73344fe94a/a6688/salty_egg.jpg 315w,
+/personal-blog/static/8058f3f26913fea3b6a89a73344fe94a/828fb/salty_egg.jpg 630w,
+/personal-blog/static/8058f3f26913fea3b6a89a73344fe94a/0ede0/salty_egg.jpg 945w,
+/personal-blog/static/8058f3f26913fea3b6a89a73344fe94a/3ac88/salty_egg.jpg 1260w,
+/personal-blog/static/8058f3f26913fea3b6a89a73344fe94a/e1596/salty_egg.jpg 2048w&quot;
         sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;

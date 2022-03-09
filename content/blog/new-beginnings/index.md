@@ -1,5 +1,5 @@
 ---
-title: Retreiving reviews using Google API.
+title: Title.
 date: "2015-05-28T22:40:32.169Z"
 description: Explaining how I managed to retreive reviews using Google API and the obstacles I encountered.
 ---

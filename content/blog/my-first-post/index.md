@@ -20,7 +20,7 @@ You will need to do the following to get an API key:
 - Create a project.
 - Enable billing. (_Google Cloud provides $300 in free credits but will need a card on file._)
 - Enable the Places API.
-- Go to the Credentials section on the Google Cloud dashboard, on the top of the screen you should see **+Create Credentials** and generate an API key.
+- Go to the Credentials section on the Google Cloud dashboard, at the top of the screen you should see **+Create Credentials** and generate an API key.
 
 That's it for generating an API key! This was a simple overview of the process. For a step by step process, click [here](https://developers.google.com/maps/documentation/places/web-service/cloud-setup).
 
@@ -41,7 +41,7 @@ Fortunately, Google has a web service that will easily retrieve the ID for you, 
 
 ### Option 2
 
-You can also retrieve the Place ID on Google Chrome by searching for the business on Google, ensure that the business appears on the right hand right, and right clicking, selecting _inspect_, and searching for "data-pid". It is a string of random numbers and characters and should look something like this:
+You can also retrieve the Place ID on Google Chrome by searching for the business on Google, ensure that the business appears on the right hand side, then right click, select _inspect_, and search for "data-pid". It is a string of random numbers and characters and should look something like this:
 
 ```js
 data-pid="PLACE_ID"
@@ -103,7 +103,7 @@ and you'd be done. Because we want to access data from Google's servers, we can'
 
 ### Installing and Using A CORS Proxy
 
-So how do we get the response we were expecting? We use a CORS proxy! A CORS proxy will add the neccesary CORS headers to the proxied request. The proxy we will be using is [CORS Anywhere](https://github.com/Rob--W/cors-anywhere/). Keep in mind, we will be making our own CORS proxy, so make sure you have [git](https://git-scm.com/) and [heroku cli](https://devcenter.heroku.com/articles/heroku-cli_) installed. Once installed follow these intructions:
+So how do we get the response we were expecting? We use a CORS proxy! A CORS proxy will add the neccesary CORS headers to the proxied request. The proxy we will be using is [CORS Anywhere](https://github.com/Rob--W/cors-anywhere/). Keep in mind, we will be making our own CORS proxy, so make sure you have [git](https://git-scm.com/) and [heroku cli](https://devcenter.heroku.com/articles/heroku-cli_) installed. Once installed follow these instructions:
 
 ```js
 git clone https://github.com/Rob--W/cors-anywhere.git
@@ -170,6 +170,6 @@ If you're having trouble installing and setting up your own CORS proxy, or want 
 
 ## Limitations & Conclusion
 
-Great! Now we have a JSON reponse on our browser and can work with the data the way we want to. Are we done? Maybe. A CORS proxy is a great tool to use when you need access to JSON data on the fly. Should you deploy your application using a CORS proxy? That depends on what your use case is. You should only be using a CORS proxy you trust. You also shouldn't be using a CORS proxy if you requesting private data through HTTP responses. You can find more out about the downsides of using a CORS proxy [here](https://httptoolkit.tech/blog/cors-proxies/).
+Great! Now we have a JSON response on our browser and can work with the data the way we want to. Are we done? Maybe. A CORS proxy is a great tool to use when you need access to JSON data on the fly. Should you deploy your application using a CORS proxy? That depends on what your use case is. You should only be using a CORS proxy you trust. You also shouldn't be using a CORS proxy if you requesting private data through HTTP responses. You can find more out about the downsides of using a CORS proxy [here](https://httptoolkit.tech/blog/cors-proxies/).
 
-Thank you for checking out what I had to say. I hope this blog post gave you a little bit more insight on CORS proxies and what they can do.
+Thank you for checking out what I had to say. I hope this blog post gave you a little more insight on CORS proxies and what they can do.

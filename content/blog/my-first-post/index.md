@@ -1,5 +1,5 @@
 ---
-title: Retrieving reviews using Google API
+title: Retrieving Reviews Using The Google Places API
 date: "2022-03-08"
 description: A simple explanation on how I managed to retrieve reviews using Google API and the obstacles I encountered, using React.js.
 ---
@@ -83,21 +83,25 @@ const Reviews = () => {
 export default Reviews;
 ```
 
-What I want to focus on is what happens when this fetch request is made. Take a look at your console (make sure you're using console.log(), and you run into an error. If you make fetch requests often you've probably seen this before:
+### Why Don't We Have Access To This data?
+
+What I want to focus on is what happens when this fetch request is made. Take a look at your console (make sure you're using console.log), and you run into an error. If you make fetch requests often you've probably seen this before:
 
 ```js
 No 'Access-Control-Allow-Origin' header is present on the requested resource. Origin 'http://localhost:3000' is therefore not allowed access.
 ```
 
-## Why Don't We Have access To This data?
+You might be thinking to yourself, I have an API key, why isn't my code working? And the answer is, it is. If you take the same URL, with the parameters filled in, and use something like [Postman](https://www.postman.com/), you will get a JSON response back. Without getting too into it, the reason it is working with Postman and not your code is because of Cross-Origin Resource Sharing, better known as [CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS). CORS is a server-side configuration which clients, like your browser, choose to enforce and other developments tools, like Postman, choose to not enforce.
 
-You might be thinking to yourself, I have an API key, why isn't my code working? And the answer is, it is! If you take the same URL, with the parameters filled in, and use something like [Postman](https://www.postman.com/), you will get a JSON response back. Without getting too into it, the reason it is working with Postman and not your code is because of Cross-Origin Resource Sharing, better known as [CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS). CORS is a server-side configuration which clients, like your browser, choose to enforce and other developments tools, like Postman, choose to not enforce.
+## The Solution, Kind Of
 
-## Getting Access To The Data On Our Browser
+When looking online for a solution, all I found was
 
-When looking online for a solution, all I found was "add a an HTTP header to the server: Access-Control-Allow-Origin: \*" and you'd be done. Because we want to access data from Google's servers, we can't add an HTTP header since it is not our server. Also adding the request headers to our fetch function will not work either because Google's server does not allow certain methods to be called without authorization.
+> "add an HTTP header to the server: Access-Control-Allow-Origin: \*"
 
-### The Solution, Kind Of
+and you'd be done. Because we want to access data from Google's servers, we can't add an HTTP header since it is not our server. Also adding the request headers to our fetch function will not work either because Google's server does not allow certain methods to be called without authorization.
+
+### Installing and Using A CORS Proxy
 
 So how do we get the response we were expecting? We use a CORS proxy! A CORS proxy will add the neccesary CORS headers to the proxied request. The proxy we will be using is [CORS Anywhere](https://github.com/Rob--W/cors-anywhere/). Keep in mind, we will be making our own CORS proxy, so make sure you have [git](https://git-scm.com/) and [heroku cli](https://devcenter.heroku.com/articles/heroku-cli_) installed. Once installed follow these intructions:
 
@@ -162,7 +166,10 @@ const Reviews = () => {
 export default Reviews;
 ```
 
-##
+If you're having trouble installing and setting up your own CORS proxy, or want a better understanding on what is happening, please refer to a great explanation [here](https://stackoverflow.com/questions/43871637/no-access-control-allow-origin-header-is-present-on-the-requested-resource-whe/43881141#43881141).
 
-- You can find the Place ID for a business [here](https://developers.google.com/maps/documentation/places/web-service/place-id).
-- There is a great guide on how to host your own CORS proxy [here](https://stackoverflow.com/questions/43871637/no-access-control-allow-origin-header-is-present-on-the-requested-resource-whe/43881141#43881141).
+## Limitations & Conclusion
+
+Great! Now we have a JSON reponse on our browser and can work with the data the way we want to. Are we done? Maybe. A CORS proxy is a great tool to use when you need access to JSON data on the fly. Should you deploy your application using a CORS proxy? That depends on what your use case is. You should only be using a CORS proxy you trust. You also shouldn't be using a CORS proxy if you requesting private data through HTTP responses. You can find more out about the downsides of using a CORS proxy [here](https://httptoolkit.tech/blog/cors-proxies/).
+
+Thank you for checking out what I had to say. I hope this blog post gave you a little bit more insight on CORS proxies and what they can do.

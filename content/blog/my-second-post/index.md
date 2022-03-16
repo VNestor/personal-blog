@@ -76,9 +76,24 @@ If successfully installed, Git will return the following message:
 
 If you don't receive this message, you try following the installation guide [here](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
 
-#### Now we want to let know Git who you are.
+#### Now we want to set your user name and email address.
 
 ```js
 git config --global user.name "USERNAME"
 git config --global user.email "EMAIL@EXAMPLE.COM"
 ```
+
+#### To start a new localrepository.
+
+```js
+git init
+```
+
+#### To add a file and to add more than one file.
+
+```js
+git add <filename>
+git add .
+```
+
+####
